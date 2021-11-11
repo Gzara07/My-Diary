@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="579dp"
+        android:layout_height="282dp"
+        app:srcCompat="@drawable/rectangle_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/liner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/cd4eb05c204b495d82bcfe177f435d92"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:text="Rengoku"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_liner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liner1"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:id="@+id/liner3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/textView16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_action_name"
+                android:layout_marginEnd="20dp"/>
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:text="Синхронизация аккаунта"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/liner3"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/textView17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/notification"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:text="Уведомления и напоминания"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/liner4"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/textView18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/photo"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:text="Тема"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/liner5"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/textView19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/information"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:text="Обратная связь"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/liner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/main_liner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="76dp"
+            android:layout_height="89dp"
+            android:layout_marginEnd="20dp"
+            android:text="Прочее"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/button6"
+            android:background="@color/green_w"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="76dp"
+            android:layout_height="89dp"
+            android:layout_marginEnd="20dp"
+            android:text="Задачи"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/button7"
+            android:background="@color/green_b"/>
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="76dp"
+            android:layout_height="89dp"
+            android:background="@color/green_w"
+            android:text="Календарь"
+            android:textSize="12sp"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="76dp"
+            android:layout_height="89dp"
+            android:text="Мое"
+            android:textSize="12sp"
+            android:background="@color/green_w">
+
+        </Button>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
