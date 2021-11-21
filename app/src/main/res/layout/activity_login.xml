@@ -186,7 +186,7 @@
                 android:layout_height="50dp"
                 app:cardCornerRadius="40dp">
                 <Button
-                    android:id="@+id/button8"
+                    android:id="@+id/login2"
                     android:layout_width="320dp"
                     android:layout_height="45dp"
                     android:text="@string/log_in"
@@ -194,7 +194,7 @@
             </androidx.cardview.widget.CardView>
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/sing_in"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/not_sign_in"
