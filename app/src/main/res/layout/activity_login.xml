@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/liner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_in1"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                android:layout_marginBottom="20dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aplle_card"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="40dp">
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:text="@string/apple"
+                    app:layout_constraintBottom_toTopOf="@+id/button4"
+                    app:layout_constraintStart_toStartOf="@+id/textView6"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/green_w"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/facebook_card"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="40dp"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:text="@string/facebook"
+                    app:layout_constraintBottom_toTopOf="@+id/button5"
+                    app:layout_constraintEnd_toEndOf="@+id/button"
+                    app:layout_constraintStart_toStartOf="@+id/button"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/green_b"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/google_card"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="40dp"
+                android:layout_marginTop="8dp">
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:text="@string/google"
+                    app:layout_constraintEnd_toEndOf="@+id/button4"
+                    app:layout_constraintStart_toStartOf="@+id/button4"
+                    android:background="@color/white"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="41dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/or"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/liner1" />
+
+        <LinearLayout
+            android:id="@+id/liner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="170dp"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_1"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edit1"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:hint="@string/emaill"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="@+id/textView8"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Password_1"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:hint="@string/password"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/liner2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:id="@+id/liner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Remember_me"
+                    app:layout_constraintEnd_toStartOf="@+id/textView11"
+                    android:layout_marginEnd="130dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/log_in_card"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="40dp">
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="320dp"
+                    android:layout_height="45dp"
+                    android:text="@string/log_in"
+                    android:background="@color/green_w"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/not_sign_in"
+                app:layout_constraintEnd_toEndOf="@+id/button8"
+                app:layout_constraintStart_toStartOf="@+id/button8"
+                app:layout_constraintTop_toBottomOf="@+id/button8" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
