@@ -7,21 +7,152 @@
     tools:context=".Smthg_else"
     android:background="@color/background">
 
+    <LinearLayout
+        android:id="@+id/main_liner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/__________"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/main_emotions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView11">
+
+            <LinearLayout
+                android:id="@+id/liner_emotions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@id/menu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/smile"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/smile"
+                    tools:layout_editor_absoluteX="188dp"
+                    tools:layout_editor_absoluteY="530dp" />
+
+                <ImageView
+                    android:id="@+id/happy"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/happy"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="404dp" />
+
+                <ImageView
+                    android:id="@+id/love"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/love"
+                    tools:layout_editor_absoluteX="174dp"
+                    tools:layout_editor_absoluteY="140dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liner_emotions_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@id/liner_emotions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/crash"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/crash"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="271dp" />
+
+                <ImageView
+                    android:id="@+id/sad_tear"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/sad_tear"
+                    tools:layout_editor_absoluteX="292dp"
+                    tools:layout_editor_absoluteY="142dp" />
+
+                <ImageView
+                    android:id="@+id/sad"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/sad"
+                    tools:layout_editor_absoluteX="172dp"
+                    tools:layout_editor_absoluteY="271dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liner_emotions_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@id/liner_emotions_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/sad_cry"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/sad_crying"
+                    tools:layout_editor_absoluteX="170dp"
+                    tools:layout_editor_absoluteY="409dp" />
+
+                <ImageView
+                    android:id="@+id/sick"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/sick"
+                    tools:layout_editor_absoluteX="292dp"
+                    tools:layout_editor_absoluteY="261dp" />
+
+                <ImageView
+                    android:id="@+id/angry"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/angry"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="142dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/green_w"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:menu="@menu/menu">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/__________" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

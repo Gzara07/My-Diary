@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/proche"
         android:title="@string/Prochee"
-        android:icon="@drawable/ic_baseline_menu_24"/>
+        android:icon="@drawable/prochee"/>
     <item android:id="@+id/tasks"
         android:title="@string/Tasks"
-        android:icon="@drawable/list"/>
+        android:icon="@drawable/task_1"/>
     <item android:id="@+id/calendar"
         android:title="@string/calendar"
-        android:icon="@drawable/calendar"/>
+        android:icon="@drawable/calendar_1"/>
     <item android:id="@+id/account"
         android:title="@string/myself"
-        android:icon="@drawable/account"/>
+        android:icon="@drawable/profile"/>
 
 </menu>
